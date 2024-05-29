@@ -1,0 +1,91 @@
+/*
+.contenedor {
+    display: inline-block;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 40% 50% 32%;
+    gap: 10px;
+}
+
+.caja{
+    /* width: 150px;
+    height: 150px; */
+    /* background-color: red; */
+    /* border: 4px solid black; 
+    margin: 15px;
+    padding: 10px;
+    
+    
+    
+    
+    
+}
+
+.c10{
+   grid-area: 4 / 1 / 4 /4;
+}
+
+.c1 iframe{
+    width: 100%;
+}
+.c4 iframe{
+    width: 100%;
+}
+.c2 img{
+   width: 200px;
+}
+
+.c3 img{
+    width: 200px;
+ }
+
+ .c5 img{
+    width: 200px;
+ }
+
+ .c6 img{
+    width: 200px;
+ }
+
+ .c8 img{
+    width: 200px;
+ }
+ .c9 img{
+    width: 200px;
+ }
+
+ */
+
+ .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 10px; /* Espacio entre las cajas */
+}
+
+.caja {
+    margin: 0; /* Elimina el margen */
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho y la altura */
+}
+
+.c10 {
+    grid-column: span 2; /* Hace que el footer ocupe ambas columnas */
+}
+
+.c1 iframe,
+.c4 iframe {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+.c2 img,
+.c3 img,
+.c5 img,
+.c6 img,
+.c8 img,
+.c9 img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
